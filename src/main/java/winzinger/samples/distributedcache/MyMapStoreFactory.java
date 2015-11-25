@@ -13,7 +13,6 @@ import java.util.Properties;
  * the MapStore in the configuration file
  */
 public class MyMapStoreFactory implements MapStoreFactory<Long, String> {
-    @Override
     public MapLoader<Long, String> newMapStore(String name, Properties properties) {
         // that's actually one factory for all our (potential) MapStores, so we might
         // have to check the MapStore name ... irrelevant in this simple example

@@ -33,27 +33,22 @@ public class MyMapStore implements MapStore<Long, String> {
         }
     }
 
-    @Override
     public void store(Long aLong, String s) {
         throw new NotImplementedException();
     }
 
-    @Override
     public void storeAll(Map<Long, String> map) {
         throw new NotImplementedException();
     }
 
-    @Override
     public void delete(Long aLong) {
         throw new NotImplementedException();
     }
 
-    @Override
     public void deleteAll(Collection<Long> collection) {
         throw new NotImplementedException();
     }
 
-    @Override
     public String load(Long id) {
         // in case we have a cache-miss, we will load the data from the server
         try {
@@ -73,12 +68,10 @@ public class MyMapStore implements MapStore<Long, String> {
         }
     }
 
-    @Override
     public Map<Long, String> loadAll(Collection<Long> collection) {
         return null;
     }
 
-    @Override
     public Iterable<Long> loadAllKeys() {
         return null;
     }

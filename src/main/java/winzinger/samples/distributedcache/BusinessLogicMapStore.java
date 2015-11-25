@@ -22,7 +22,6 @@ public class BusinessLogicMapStore implements Callable<Double> {
         mymap = hazelcastInstance.getMap("MyMapStore");
     }
 
-    @Override
     public Double call() throws Exception {
         logger.info("starting BL thread (MS) "+Thread.currentThread().getName());
 
